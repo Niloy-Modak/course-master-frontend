@@ -13,8 +13,9 @@ export default function Navbar() {
 
     const navLinks = [
         { name: "Home", to: "/" },
-        { name: "All Products", to: "/all-products" },
-        { name: "Dashboard", to: "/My-Dashboard" }
+        { name: "All Courses", to: "/all-courses" },
+        { name: "Dashboard", to: "/admin-dashboard" },
+        { name: "Add course", to: "/add-course" },
     ];
 
     // Close mobile menu on window resize
@@ -85,12 +86,20 @@ export default function Navbar() {
                                 </button>
                             </div>
                         ) : (
-                            <Link
-                                href="/login"
-                                className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 text-sm font-medium"
-                            >
-                                Login
-                            </Link>
+                            <><div>
+                                <Link
+                                    href="/login"
+                                    className="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 text-sm font-medium"
+                                >
+                                    Login
+                                </Link>
+                                <Link
+                                    href="/register"
+                                    className="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 text-sm font-medium"
+                                >
+                                    Register
+                                </Link>
+                            </div></>
                         )}
                     </div>
 

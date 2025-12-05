@@ -8,7 +8,7 @@ const MainLayout = ({ children }) => {
       <AuthProvider>
         <main>
           <Navbar />
-          <div className="max-w-xl mx-auto px-4 min-h-[calc(100vh-280px)]">
+          <div className="max-w-7xl mx-auto pt-16 px-4 min-h-[calc(100vh-64px)]">
             {children}
           </div>
         </main>

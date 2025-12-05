@@ -1,3 +1,5 @@
+import CourseCart from "./components/CourseCart";
+import PopularCourse from "./components/PopularCourse";
 
 
 export default function Home() {
@@ -6,6 +8,9 @@ export default function Home() {
       
       <div>
         hello
+        <div>
+          <PopularCourse/>
+        </div>
       </div>
     </section>
   );
